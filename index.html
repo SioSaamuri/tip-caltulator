@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="splitter-logo-container">
+      <img src="/images/logo.svg" alt="splitter-logo">
+    </div>
+    <div class="main-container">
+      <div class="top-part">
+      <div class="bill-container">
+      <h2 class="bill-header">Bill</h2>
+      <div class="input-container bill-input-container">
+
+        <img src="/images/icon-dollar.svg" alt="">
+
+      <input id="bill-input" type="number"
+      placeholder="0.0">
+      </div>
+    </div>
+    <div class="tip-container">
+      <h2 class="tip-header">Select Tip %</h2>
+      <div class="tip-button-container">
+        <!-- <input type="button" class="tip-button tip-5"  value="5%">
+        <input type="button" class="tip-button tip-10" value="10%">
+        <input type="button" class="tip-button tip-15" value="15%">
+        <input type="button" class="tip-button tip-25" value="25%">
+        <input type="button" class="tip-button tip-50" value="50%">
+        <input type="number" class="tip-button tip-custom" value="custom"> -->
+        <button type="button" class="tip-button tip-5"  value="5">5%</button>
+        <button type="button" class="tip-button tip-10" value="10">10%</button>
+        <button type="button" class="tip-button tip-15" id="tip-15" value="15">15%</button>
+        <button type="button" class="tip-button tip-25"  value="25">25%</button>
+        <button type="button" class="tip-button tip-50" value="50">50%</button>
+        <input type="number" class="tip-button" id="custom-tip" placeholder="Custom"></input>
+      </div>
+    </div>
+    <div class="num-of-people">
+      <h2 class="people-header">Number of People</h2>
+      <div class="people-container">
+        <img src="images/icon-person.svg" alt="">
+      <input class="input" id="people-input" type="number" placeholder="Number of people">
+    </div>
+    </div>
+  </div>
+  <div class="bottom-part">
+    <div class="result-container">
+      <div class="tip-amount-container">
+        <p>Tip Amount <br> <span>/ person</span></p>
+        <p class="tip-amount" id="tip-amount">0.0</p>
+      </div>
+      <div class="total-amount-container">
+        <p>Total <br> <span>/ person</span></p>
+        <p class="total-amount" id="total-person">0.0</p>
+      </div>
+      <button class="reset-btn" id="reset">Reset</button>
+    </div>
+  </div>
+  </div>
+ </div>
+ <script src="scrypt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+* {
+  font-family: "Space Mono", monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+}
+
+h2 {
+  font-size: 16px;
+  color: rgba(94, 122, 125, 1);
+}
+
+.splitter-logo-container {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  background: hsl(0, 0%, 100%);
+  margin-top: 40px;
+  height: 789px;
+  border-radius: 25px 25px 0 0;
+  padding: 32px;
+}
+
+#bill-input,
+.input {
+  width: 311px;
+  height: 48px;
+  border-radius: 5px;
+  border: none;
+  text-align: right;
+  padding: 10px;
+  background: hsl(189, 41%, 97%);
+  font-size: 24px;
+  margin-top: 6px;
+  margin-bottom: 32px;
+  appearance: textfield;
+  outline: none;
+  /* -webkit-appearance: none; */
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.input::placeholder {
+  font-size: 13px;
+  opacity: 0.4;
+}
+
+.icon {
+  position: absolute;
+  transform: translate(100%, 100%);
+  fill: hsl(184, 14%, 56%);
+}
+
+.tip-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  margin-top: 6px;
+}
+
+.tip-button {
+  width: 147px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 71, 75, 1);
+  color: hsl(0, 0%, 100%);
+}
+
+#custom-tip {
+  appearance: textfield;
+  padding-left: 10px;
+  background: hsl(0, 0%, 100%);
+  border: 2px solid rgba(94, 122, 125, 1);
+  color: rgba(0, 71, 75, 1);
+  outline: none;
+}
+
+#custom-tip::placeholder {
+  color: black;
+  font-size: 13px;
+  opacity: 0.4;
+}
+
+.active {
+  background: hsl(172, 67%, 45%);
+}
+
+.result-container {
+  width: 327px;
+  height: 257px;
+  margin-top: 32px;
+  background: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.tip-amount-container,
+.total-amount-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.result-container p {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+
+.result-container span {
+  color: rgba(127, 157, 159, 1);
+  font-size: 13px;
+}
+
+#tip-amount,
+#total-amount {
+  font-size: 32px;
+}
+
+.reset-btn {
+  width: 281px;
+  background: rgba(38, 194, 174, 1);
+  color: rgba(0, 71, 75, 1);
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
